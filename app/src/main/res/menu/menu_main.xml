@@ -1,0 +1,19 @@
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.dialoappregistro.pruebalayoutdialo.MainActivity">
+    <item
+        android:id="@+id/action_qr"
+        android:icon="@drawable/qr"
+        android:title="@string/Lectura_Qr"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/Busqueda"
+        android:icon="@drawable/b_squeda"
+        android:title="@string/Busqueda"
+        android:orderInCategory="100"
+        app:showAsAction="always"/>
+
+
+</menu>

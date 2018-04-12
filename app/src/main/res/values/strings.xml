@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Registro Dialó B&amp;M</string>
+    <string name="Lectura_Qr">Lectura Qr</string>
+    <string name="Busqueda">Buscar</string>
+    <string name="app_label">App Label</string>
+    <string name="search_hint">Buscar</string>
+    <string name="Buscar_hint">Introducir Busqueda:</string>
+</resources>
