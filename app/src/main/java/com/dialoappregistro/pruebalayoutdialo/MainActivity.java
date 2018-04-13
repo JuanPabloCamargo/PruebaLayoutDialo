@@ -109,26 +109,11 @@ public class MainActivity extends AppCompatActivity {
             //Toast.makeText(getApplicationContext(),"No cuenta con Permisos para la camara",Toast.LENGTH_LONG).show();
             ActivityCompat.requestPermissions(this,new String[]{Manifest.permission.CAMERA},100);
         }
-        else if (shouldShowRequestPermissionRationale(CAMERA_SERVICE))
-        {
-            cargarDialogoRecomendacion();
-        }
+
 
     }
 
-    @Override
-    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
-        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
-
-        /*if(requestCode == 100)
-        {
-            if(grantResults.length == 1 && grantResults[0] == PackageManager.PERMISSION_GRANTED)
-            {
-                Toast.makeText(getApplicationContext(),"Permisos Aceptados",Toast.LENGTH_LONG).show();
-            }
-        }*/
-    }
-
+/*
     private void cargarDialogoRecomendacion() {
         AlertDialog.Builder dialogo=new AlertDialog.Builder(MainActivity.this);
         dialogo.setTitle("Permisos Desactivados");
@@ -143,7 +128,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         dialogo.show();
-    }
+    }*/
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
