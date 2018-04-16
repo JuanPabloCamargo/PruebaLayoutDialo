@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.dialoappregistro.pruebalayoutdialo.MainActivity">
     <item
-        android:id="@+id/action_qr"
-        android:icon="@drawable/qr"
+        android:id="@+id/refresh"
+        android:icon="@drawable/refresh"
         android:title="@string/Lectura_Qr"
         app:showAsAction="always" />
     <item
@@ -14,6 +14,7 @@
         android:title="@string/Busqueda"
         android:orderInCategory="100"
         app:showAsAction="always"/>
+
 
 
 </menu>

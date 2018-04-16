@@ -21,6 +21,8 @@ import android.widget.Toast;
 import com.google.zxing.Result;
 import com.miguelcatalan.materialsearchview.MaterialSearchView;
 
+import java.util.List;
+
 import me.dm7.barcodescanner.zxing.ZXingScannerView;
 import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
@@ -52,8 +54,6 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-
-
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -62,19 +62,21 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        list =new String[] {"Texto 1","Texto 2","Texto 3","Texto 4"};
+        list =new String[] {"Texto 1","Tarro","Timbre","Toronja"};
 
 
         materialSearchView.setOnQueryTextListener(new MaterialSearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String query) {
                 //crear aca el filtro de busqueda
+
                 return false;
             }
 
             @Override
             public boolean onQueryTextChange(String newText) {
                 //realizar cambios en tiempo real
+                materialSearchView.setSuggestions(list);
                 return false;
             }
         });
@@ -150,16 +152,15 @@ public class MainActivity extends AppCompatActivity {
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         switch (item.getItemId()) {
-            case R.id.action_qr:
-                Escanear();
-                Log.i("ActionBar", "Codigo Qr");
-                //Toast.makeText(getApplicationContext(), "Realiza lectura de QR", Toast.LENGTH_LONG).show();
+            case R.id.refresh:
+                Toast.makeText(getApplicationContext(), "Realizar actualización", Toast.LENGTH_LONG).show();
                 //Intent AddPhrase = new Intent(getApplicationContext(), AddPhrase.class);
                 //startActivity(AddPhrase);
                 return true;
 
             case R.id.Busqueda:
                 Log.d("Boton","Busqueda");
+
             default:
                 return super.onOptionsItemSelected(item);
         }

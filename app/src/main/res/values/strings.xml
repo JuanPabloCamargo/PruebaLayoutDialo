@@ -5,4 +5,6 @@
     <string name="app_label">App Label</string>
     <string name="search_hint">Buscar</string>
     <string name="Buscar_hint">Introducir Busqueda:</string>
+    <string name="invitados">Asistentes :</string>
+    <string name="Registrar">Registrar</string>
 </resources>
